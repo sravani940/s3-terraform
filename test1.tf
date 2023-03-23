@@ -7,5 +7,11 @@ resource "aws_instance" "test" {
   ami           =  "{ami_id}"
   instance_type = "{instance_type}"
 
-  count = 2
+  
+  }
+
+
+resource "aws_s3_bucket" "user" {
+  bucket = "mark-terraform"
+  
   }
